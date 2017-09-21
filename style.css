@@ -1,0 +1,182 @@
+.page {
+  width: 100%;
+  margin: 10px;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.page__comment {
+  width: 760px;
+  background-color: rgb(251,255,235);
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  border-left: 5px solid rgb(87,209,25);
+}
+
+.content {
+  margin: 25px;
+  padding: 20px 0;
+  overflow: auto;
+}
+
+.content__item {
+  margin-top: 10px;
+}
+
+.head {
+  float: left;
+  color: rgb(87,209,25);
+}
+
+.button {
+  float: right;
+}
+
+.head__content_size_bold {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  height: 42px;
+}
+
+.button__btn {
+  background-color: rgb(87,209,25);
+  color: rgb(255,255,255);
+}
+
+.input {
+  width: 100%;
+  padding: 15px 0;
+  margin: 10px 0;
+  border-top: 2px solid rgb(223,223,223);
+  border-bottom: 2px solid rgb(223,223,223);
+}
+
+.content__input_border_none {
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  font-size: 22px;
+  font-family: Roboto, Helvetica, sans-serif;
+  color: rgb(32,29,35);
+}
+
+.content__input_border_none:focus {
+  outline: 0;
+}
+
+.content__input_border_none::-webkit-input-placeholder {
+  color: rgb(140,152,155);
+}
+
+.input_border_none::-moz-placeholder {
+  color: rgb(140,152,155);
+}
+
+.input__btn {
+  display: none;
+  margin-top: 15px;
+}
+
+.input__btn_save {
+  background-color: rgb(0,188,212);
+  color: rgb(255, 255, 255);
+  margin-right: 7px;
+}
+
+.input__btn_cansel {
+  background-color: rgb(255, 255, 255);
+  color: rgb(60,53,66);
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.output__text {
+  width: 99%;
+  border: none;
+  resize: none;
+  color: rgb(21,19,25);
+  background-color: inherit;
+  font-size: inherit;
+}
+
+.output__text:focus {
+  outline: 0;
+}
+
+.parametrs {
+  color: rgb(143,153,156);
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+.parametrs__avatar {
+  width: 26px;
+  height: 23px;
+  background-color: rgb(240,242,223);
+  padding-top: 3px;
+  text-align: center;
+  border-radius: 50%;
+
+}
+
+.parametrs__name {
+  font-weight: bold;
+}
+
+.parametrs__bird {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+/* Cтили для всплывающих окон - начало */
+
+.pop-up {
+  position: absolute;
+  width: 260px;
+  height: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  color: rgb(56,52,63);
+}
+
+.item:first-child {
+  border-bottom: 1px solid rgb(235,235,235);
+}
+
+.item:hover {
+  opacity: 0.5;
+}
+
+.item__btn {
+  color: rgb(56,52,63);
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding-right: 100px;
+  text-transform: none;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.item__btn:focus {
+  outline: 0;
+}

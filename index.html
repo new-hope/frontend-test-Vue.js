@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Frontend-test</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app" class="page" v-on:click="hidePopUp()">
+
+
+    <div class="page__comment">
+      <div class="content">
+
+          <div class="content__item head">
+            <div class="head__content_size_bold">Подумать</div>
+            <div>Продавец</div>
+          </div>
+
+          <div class="content__item button">
+            <button type="button" name="button" class="btn button__btn">Сменить этап подбора</button>
+          </div>
+          <div class="clear"></div>
+
+          <div class="content__item input">
+            <input type="text" placeholder="Написать комментарий" class="content__input_border_none" v-on:input="showButtons" v-on:focus="onFocus">
+            <div class="input__btn">
+              <button type="button" name="button" class="btn input__btn_save" v-on:click="save">Сохранить</button>
+              <button type="button" name="button" class="btn input__btn_cansel" v-on:click="cansel">Отмена</button>
+            </div>
+          </div>
+
+          <div class="content__item" v-on:click="showPopUp($event)">
+            <template v-for="comment in comments">
+              <div class="output">
+                <textarea class="output__text" rows="1" disabled>{{ comment.text }}</textarea>
+                <ul class="parametrs">
+                  <li class="parametrs__avatar"><img src="images/avatar.png" alt="avatar" class="avatar"></li>
+                  <li class="parametrs__name">{{ comment.name }}</li>
+                  <li class="parametrs__date">{{ comment.date }}</li>
+                  <li class="parametrs__bird"><img src="images/up.png" alt="bird"></li>
+                </ul>
+                <div class="input__btn">
+                  <button type="button" name="button" class="btn input__btn_save" v-on:click="">Сохранить</button>
+                  <button type="button" name="button" class="btn input__btn_cansel" v-on:click="hideBtn">Отмена</button>
+                </div>
+              </div>
+            </template>
+          </div>
+
+
+
+      </div>
+    </div>
+
+
+    <div class="pop-up" v-show="flagPopUp">
+      <div class="pop-up__item item">
+        <button type="button" name="button" class="btn item__btn" v-on:click="edit()">Редактировать</button>
+      </div>
+      <div class="pop-up__item item">
+        <button type="button" name="button" class="btn item__btn">Удалить</button>
+      </div>
+    </div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
